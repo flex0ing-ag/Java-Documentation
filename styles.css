@@ -1,0 +1,158 @@
+/* Default styles */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  background-color: #d3c4e9;
+  
+}
+
+body {
+  display: flex;
+}
+
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #2d2b3e;
+  color: white;
+  padding: 20px;
+  border: 1px solid #ccccccaa;
+}
+
+#navbar h4 {
+  margin-bottom: 15px;
+  font-size: 23px;
+  font-weight: 500;
+  padding: 6px;
+  border-bottom: 3px solid #ccccccaa;
+}
+
+
+.nav-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin: 8px auto;
+  border-radius: 5px;
+  
+  
+}
+
+.nav-link:hover {
+  background-color: #1b1928;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+#navbar li {
+  color: #4d4e53;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  font-size: 15px;
+}
+
+
+.main-section {
+  display: flexbox;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.main-section:target {
+  display: block;
+}
+
+
+
+#main-doc {
+  padding: 20px;
+}
+
+header {
+  font-size: 1.8em;
+}
+
+.code-block {
+  background-color:#1a1924;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  position: relative;
+}
+
+.code-text {
+  color: #dfdae4;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.copy-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #d3c4e9;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #d4c2a0;
+}
+
+.search-container {
+  margin: 20px auto;
+}
+
+.search-container form input[type=text] {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  background-color: #ccc;
+}
+.search-container form input:hover{
+  background-color: white;
+}
+.image{
+  width: 350px;
+  height: 300px;
+  display: flexbox;
+  margin: 15px 5px;
+}
+.imge{
+  width: 500px;
+  height:100px;
+  display: inline-block;
+  margin: 10px 5px;
+}
+img{
+  background-color: #ccc;
+  border-radius: 3px;
+}
+table{
+  align-items: center;
+}

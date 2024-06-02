@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+
+    <nav id="navbar">
+      <h4>Java Documentation</h4>
+      <div class="search-container">
+        <form action="#" method="get">
+          <input type="text" placeholder="Search.." name="search" id="search-input" spellcheck="false"
+            data-ms-editor="true" autofocus>
+          <input type="submit" value="Search" style="display: none;">
+        </form>
+      </div>
+      <ul>
+        <li>
+          <a class="nav-link" href="#introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#getting_started_with_java">Getting started with JAVA</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Java_point">Java Entry Point</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Pointing_to_console">Pointing to the Console</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Declaring_functions">Declaring Functions</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#object_oriented_programming">Object Oriented Programming</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <h1>Introduction</h1><br>
+      <article>
+        <p>
+          Java, a versatile and platform-independent programming language, stands at the forefront of modern software
+          development. With its object-oriented paradigm and lightweight syntax, Java empowers developers to craft
+          robust and scalable applications across diverse environments.
+        </p><br>
+
+        <p>
+          At its core, Java boasts a rich standard library encompassing essential objects like Array, Date, and Math,
+          alongside a comprehensive suite of language elements including operators, control structures, and statements.
+          This foundational framework forms the bedrock upon which developers build their innovative solutions.
+        </p><br>
+        <p>But Java's prowess doesn't end there. It extends its reach through various domains:</p><br>
+        <ul>
+          <li>
+            <b>Client-side Java:</b> Unleashing the power of Java within web browsers, client-side Java enhances user
+            experiences by seamlessly interacting with the Document Object Model (DOM). From dynamically updating web
+            pages to handling user events with finesse, client-side Java elevates the web browsing journey.
+          </li><br>
+          <li>
+            <b>Server-side Java:</b> Transforming the landscape of server-side computing, Java equips developers with
+            the tools needed to tackle complex server-side tasks. From database communication to seamless session
+            management and file manipulation, server-side Java empowers applications to thrive in the digital realm.
+          </li><br>
+        </ul>
+        <p>With Java's boundless capabilities and endless possibilities, developers embark on an exhilarating journey of
+          creation and innovation. So, buckle up and join the Java revolution as we unlock the doors to a world of
+          endless potential and boundless opportunities.</p>
+      </article>
+    </section>
+    <section class="main-section" id="What_you_should_already_know">
+      <h1>What you should already know</h1><br>
+      <article>
+        <p>Before diving into Java programming, it's helpful to have a basic understanding of certain concepts and
+          technologies. Here's what you should already know:</p><br>
+
+        <ol>
+          <li>
+            <b>Fundamental Programming Concepts: </b>Familiarize yourself with fundamental programming concepts like
+            variables, data types, operators, control structures (such as loops and conditionals), functions/methods,
+            and basic algorithmic thinking. These concepts form the foundation of programming and are essential for
+            understanding Java syntax and logic.
+          </li><br>
+
+          <li>
+            <b>Object-Oriented Programming (OOP): </b>Java is an object-oriented programming language, so having a grasp
+            of OOP principles is crucial. Understand concepts like classes, objects, inheritance, polymorphism,
+            encapsulation, and abstraction. OOP facilitates modular and organized code, which is central to Java
+            development.
+          </li><br>
+          <li>
+            <b>Basic Data Structures and Algorithms: </b>Knowledge of basic data structures (such as arrays, lists,
+            stacks, queues, and maps) and algorithms (like sorting and searching) is beneficial. Java provides built-in
+            data structures and libraries, but understanding how they work internally and when to use them is essential
+            for efficient programming.
+          </li><br>
+          <li>
+            <b>Understanding of IDEs and Development Tools: </b>Familiarize yourself with Integrated Development
+            Environments (IDEs) like Eclipse, IntelliJ IDEA, or NetBeans, which streamline Java development by providing
+            features like code editing, debugging, and project management. Additionally, understanding version control
+            systems like Git will facilitate collaboration and code management.
+          </li><br>
+          <li>
+            <b>Understanding of Web Technologies (Optional): </b>While not mandatory for learning Java, having a basic
+            understanding of web technologies like HTML, CSS, and JavaScript can be advantageous, especially if you're
+            interested in web development using Java frameworks like Spring or Java EE.
+          </li><br>
+
+        </ol>
+      </article>
+    </section>
+    <section class="main-section" id="getting_started_with_java">
+      <h1>Getting Started with JAVA</h1><br>
+      <p>Begin your <b>Java programming</b> journey effortlessly with our user-friendly online Java compiler. Say
+        goodbye to complicated setups – our platform simplifies the process by allowing you to code directly in your
+        browser. Whether you're a seasoned developer or just starting out, our intuitive interface makes crafting Java
+        applications a breeze. <b>Start coding</b> in no time, hassle-free!</p><br>
+      <p>If you're inclined to work with Java on your personal computer, this guide offers a step-by-step tutorial for
+        installing Java on Windows, macOS, and Linux (Ubuntu) systems.</p><br>
+      <div class="steps">
+        <h3 class="Windows">Install Java on Windows</h3>
+        <p>Here are simplified steps to install Java on Windows:</p>
+        <ol>
+          <li><b>Download JDK:</b> Get the Java Development Kit installer from <a
+              href="https://www.oracle.com/java/technologies/downloads/#jdk22-windows" class="oracle"
+              id="oracles">Oracle's website</a>.</li>
+          <li><b>Run Installer: </b> Double-click the downloaded file and follow on-screen instructions.</li>
+          <li><b>Set Environment Variables:</b> Add 'JAVA_HOME' with JDK path and update 'Path' with '%JAVA_HOME%\bin'.
+          </li>
+          <li><b>Verify Installation:</b> Open Command Prompt, type 'java -version', and ensure Java is installed.</li>
+        </ol>
+        <p>That's it! You're now ready to develop and run Java applications on your Windows system.</p>
+      </div>
+      <div class="image-install">
+        <table>
+        <tr>
+          <td><img class="image" src="https://www.programiz.com/sites/tutorial2program/files/java-downloading-page-on-window1-1.png"></td>
+          <td><img class="image" src="https://www.programiz.com/sites/tutorial2program/files/run-jdk-installer-on-windows11.png"></td>
+          <td><img src="https://www.programiz.com/sites/tutorial2program/files/java-setup-environment-variable11.png" class="image"></td>
+        </tr></table>
+          <img class="imge" src="https://www.programiz.com/sites/tutorial2program/files/set-java-home11.png">
+          <img class="imge" src="https://www.programiz.com/sites/tutorial2program/files/verify-java-installation1-1.png">
+      </div>
+    </section>
+    <section class="main-section" id="Java_point">
+      <h1>Java Entry Point</h1><br>
+      <p>The entry point to the java function is the main function.</p>
+      <p>It is categorized by its (String[] args) as parameter to the function.</p><br>
+      <div class="code-block">
+        <button class="copy-button" onclick="copyCode()">Copy</button>
+        <pre class="code-text">
+          <code>
+            // <font color="gray">Class declaration</font>
+            <font color="lightgreen">public</font> <font color="cyan">class</font> <font color="violet">MymainFunction</font> {
+                &nbsp;&nbsp;// <font color="gray">Java main function examples</font>
+                &nbsp;&nbsp;<font color="lightgreen">public</font> <font color="violet">static</font> <font color="violet">void</font> <font color="yellow">main</font>(<font color="violet">String</font>[] args) {
+                &nbsp;&nbsp;}
+            }
+        </code>
+        
+          </pre>
+      </div>
+      <p>As you can see the main function is wrapped within a main class which is part of the object oriented structure
+        of Java projects.</p>
+      <p>The name of the project is therefore "MyMainFuction"</p>
+
+    </section>
+    <section class="main-section" id="Pointing_to_console">
+      <h1>Pointing to the Console</h1><br>
+      <p>Welcome to the heart of Java programming – the console! This section is your gateway to mastering the
+        command-line interface, where you'll wield the power of Java with finesse. Dive into the depths of Java
+        development as you learn to navigate the console like a seasoned pro.</p>
+      <p>Embrace the command line as your playground for exploration and experimentation. From simple print statements
+        to complex debugging sessions, the console is where Java developers thrive. Are you ready to embark on this
+        journey? Let's point to the console and unleash the full potential of Java!</p><br>
+      <ol>
+        <li><b>Introduction to Console Output:</b> Begin your journey by understanding how Java communicates with the
+          console.</li><br>
+          <div class="code-block">
+            <button class="copy-button" onclick="copyCode()">Copy</button>
+            <pre class="code-text">
+              <code>
+                // <font color="gray">Basic console output</font>
+                <font color="lightgreen">public</font> <font color="cyan">class</font> <font color="violet">HelloWorld</font> {
+                    &nbsp;&nbsp;<font color="lightgreen">public</font> <font color="violet">static</font> <font color="violet">void</font> <font color="yellow">main</font>(<font color="violet">String</font>[] args) {
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color="lightgreen">System</font>.<font color="lightgreen">out</font>.<font color="violet">println</font>(<font color="orangered">"Hello, world!"</font>); <font color="gray">// Display message on the console</font>
+                    &nbsp;&nbsp;}
+                }
+            </code>
+              </pre>
+          </div><br>
+        <li><b>Print Statements Unleashed: </b>Explore the power of print statements for direct console interaction.</li><br>
+          <div class="code-block">
+            <button class="copy-button" onclick="copyCode()">Copy</button>
+            <pre class="code-text">
+              <code>
+                // <font color="gray">Using print and println statements to display messages</font>
+                <font color="lightgreen">public</font> <font color="cyan">class</font> <font color="violet">PrintExample</font> {
+                    &nbsp;&nbsp;<font color="lightgreen">public</font> <font color="violet">static</font> <font color="violet">void</font> <font color="yellow">main</font>(<font color="violet">String</font>[] args) {
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color="violet">int</font> number = <font color="orangered">42</font>;
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color="lightgreen">System</font>.<font color="lightgreen">out</font>.<font color="violet">print</font>(<font color="orangered">"The answer to life, the universe, and everything is: "</font>);
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color="lightgreen">System</font>.<font color="lightgreen">out</font>.<font color="violet">println</font>(number);
+                    &nbsp;&nbsp;}
+                }
+            </code>
+            </pre>
+          </div><br>
+      </ol>
+    </section>
+    <section class="main-section" id="Declaring_functions">
+      <h1>Declaring Functions</h1><br>
+      <p>In Java, you declare functions as methods within classes. Here's a basic example of how you can declare a
+        function in Java:</p><br>
+      <div class="code-block">
+        <button class="copy-button" onclick="copyCode()">Copy</button>
+        <pre class="code-text">
+          <code>
+            // <font color="gray">Class declaration</font>
+            <font color="lightgreen">public</font> <font color="yellow">class</font> <font color="lightblue">MyClass</font> {
+                &nbsp;&nbsp;// <font color="gray">Method declaration</font>
+                &nbsp;&nbsp;<font color="lightgreen">public</font> <font color="cyan">static</font> <font color="cyan">void</font> myFunction() {
+                &nbsp;&nbsp;&nbsp;&nbsp;// <font color="gray">Method body</font>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="lightgreen">System</font>.<font color="lightgreen">out</font>.<font color="cyan">println</font>(<font color="orangered">"This is my function."</font>);
+                &nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;// <font color="gray">Main method (entry point of the program)</font>
+                &nbsp;&nbsp;<font color="lightgreen">public</font> <font color="cyan">static</font> <font color="cyan">void</font> <font color="cyan">main</font>(<font color="cyan">String</font>[] args) {
+                &nbsp;&nbsp;&nbsp;&nbsp;// <font color="gray">Call the function</font>
+                &nbsp;&nbsp;&nbsp;&nbsp;myFunction();
+                &nbsp;&nbsp;}
+            }
+        </code>
+        
+          </pre>
+      </div>
+      <p>In this example:</p>
+      <ul>
+        <li>We declare a class named 'MyClass'.</li>
+        <li>Inside the class, we declare a method named 'myFunction()'. The public keyword indicates that the method can
+          be accessed from outside the class. The static keyword means that the method belongs to the class itself
+          rather than to instances of the class. The return type of the method is void, indicating that it does not
+          return any value.</li>
+        <li>Inside the method body, we have the code that defines the behavior of the function. In this case, it simply
+          prints "This is my function." to the console.</li>
+        <li>We also have a 'main()' method, which serves as the entry point of the program. Inside the main() method, we
+          call the myFunction() method to execute its code.</li>
+        <li>We also have a main() method, which serves as the entry point of the program. Inside the main() method, we
+          call the myFunction() method to execute its code.</li><br>
+      </ul>
+      <p>When you run the program, it will output:</p><br>
+      <div class="code-block">
+
+        <pre class="code-text">
+         <br> This <font style="color: orangered;">is</font style> my <font style="color: cyan;">function</font style>
+        </pre>
+      </div>
+    </section>
+    <section class="main-section" id="object_oriented_programming">
+      <h1>Object Oriented Programming</h1><br>
+      <p>Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can
+        contain data (attributes or properties) and code (methods or functions). Java is a prominent object-oriented
+        programming language that fully supports OOP principles. Here are some key aspects of OOP in Java:</p><br>
+        <ol>
+          <li><b>Classes and Objects:</b> In Java, classes are blueprints for creating objects. A class defines the properties and behaviors (methods) that objects of that class will have. Objects are instances of classes.</li><br>
+      <div class="code-block">
+        <button class="copy-button" onclick="copyCode()">Copy</button>
+        <pre class="code-text">
+            <code>
+              <font color="violet">public</font> <font color="lightgreen">class</font> <font color="cyan">MyClass</font> {
+                  &nbsp;&nbsp;// <font color="gray">Method declaration</font>
+                  &nbsp;&nbsp;<font color="violet">public</font> <font color="violet">static</font> <font color="violet">void</font> <font color="cyan">myFunction</font>() {
+                  &nbsp;&nbsp;&nbsp;&nbsp;// <font color="gray">Method body</font>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<font color="lightgreen">System</font>.<font color="lightgreen">out</font>.<font color="cyan">println</font>(<font color="orangered">"This is my function."</font>);
+                  &nbsp;&nbsp;}<br>
+                  &nbsp;&nbsp;// <font color="gray">Main method (entry point of the program)</font>
+                  &nbsp;&nbsp;<font color="violet">public</font> <font color="violet">static</font> <font color="violet">void</font> <font color="cyan">main</font>(<font color="violet">String</font>[] args) {
+                  &nbsp;&nbsp;&nbsp;&nbsp;// <font color="gray">Call the function</font>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<font color="cyan">myFunction</font>();
+                  &nbsp;&nbsp;}
+              }
+          </code>
+        </pre>
+      </div><br>
+      <li>
+        <b>Encapsulation:</b> Encapsulation is the bundling of data (attributes) and methods that operate on the data into a single unit (a class). Access to the data is typically restricted to methods of the class, ensuring data integrity and security.
+      </li><br>
+      <li><b>Inheritance: </b>Inheritance allows a class (subclass or child class) to inherit properties and methods from another class (superclass or parent class). This promotes code reuse and enables the creation of hierarchical class structures.</li><br>
+        <div class="code-block">
+          <button class="copy-button" onclick="copyCode()">Copy</button>
+          <pre class="code-text">
+            <code>
+              // <font color="gray">Superclass</font>
+              <font color="lightgreen">class</font> <font color="cyan">Animal</font> {
+                  &nbsp;&nbsp;<font color="violet">void</font> <font color="cyan">eat</font>() {
+                  &nbsp;&nbsp;&nbsp;&nbsp;<font color="lightgreen">System</font>.<font color="lightgreen">out</font>.<font color="cyan">println</font>(<font color="orangered">"Animal is eating."</font>);
+                  &nbsp;&nbsp;}
+              }<br>
+              // <font color="gray">Subclass</font>
+              <font color="lightgreen">class</font> <font color="cyan">Dog</font> <font color="violet">extends</font> <font color="cyan">Animal</font> {
+                  &nbsp;&nbsp;<font color="violet">void</font> <font color="cyan">bark</font>() {
+                  &nbsp;&nbsp;&nbsp;&nbsp;<font color="lightgreen">System</font>.<font color="lightgreen">out</font>.<font color="cyan">println</font>(<font color="orangered">"Dog is barking."</font>);
+                  &nbsp;&nbsp;}
+              }
+              <font color="cyan">Dog</font> myDog = <font color="violet">new</font> <font color="cyan">Dog</font>();
+              myDog.<font color="cyan">eat</font>(); // <font color="gray">Inherited from Animal class</font>
+              myDog.<font color="cyan">bark</font>();
+           </code>
+         </pre>
+        </div><br>
+        <li><b>Abstraction:</b> Abstraction is the process of hiding the implementation details of a class and showing only the essential features to the user. Abstract classes and interfaces are used to achieve abstraction in Java.</li><br>
+        <li><b>Association, Aggregation, and Composition:</b> These are forms of relationships between classes, where one class is related to another in some way. These relationships help in modeling complex systems and data structures.</li><br>
+    </ol>
+    <p>Java's support for these OOP principles makes it a powerful language for building modular, maintainable, and scalable software applications. By leveraging OOP concepts effectively, developers can create robust and flexible solutions to meet a variety of requirements.</p>
+    </section>
+    <!-- Add other sections -->
+  </main>
+  <script>
+    function copyCode() {
+      var codeBlock = document.querySelector('.code-block');
+      var range = document.createRange();
+      range.selectNode(codeBlock);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand('copy');
+      window.getSelection().removeAllRanges();
+      alert('Code copied!');
+    }
+  </script>
+</body>
+
+</html>
